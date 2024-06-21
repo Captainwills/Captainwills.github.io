@@ -9,7 +9,7 @@ body{
     width:100%;
 
 }
-#input__section{
+#input__section, #play__again{
     width: 50%;
     margin:10px auto;
     border: solid 1px black;
