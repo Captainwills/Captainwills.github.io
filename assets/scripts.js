@@ -15,8 +15,9 @@ function getGuess(){
     }
     if (count == 0){
         document.getElementById("input__section").style.display="none";
-        document.getElementById("play__again").style.display="onset";
-        document.getElementById("play__again").innerHTML= gameOver;}
+        document.getElementById("play__again").style.display="";
+        // document.getElementById("play__again").innerHTML= gameOver;
+        }
     if (guess == randomNumber){
         result.innerHTML = `Your Guess is Correct!`;
         count = 10;
@@ -34,7 +35,5 @@ function getGuess(){
 }
  
 function playAgain(){
-    count = 10;
-    document.getElementById("play__again").style.display="none";
-    document.getElementById("input__section").style.display="onset";
+    window.location.reload();
 }
