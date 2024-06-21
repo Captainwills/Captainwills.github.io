@@ -1,8 +1,10 @@
 var count = 10;
+const  getrandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 function getGuess(){
 
     var guess = document.getElementById("guess").value;
-    const  randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+       var randomNumber = getrandomNumber(1,100);
     var result = document.getElementById("result");
     if (!isNaN(guess)){
         result.innerHTML = `Your Input is Invalid, Please Input a numer between 1 and 100, \n you have ${count} left`;
