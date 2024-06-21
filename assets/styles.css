@@ -1,0 +1,15 @@
+body{
+    background: #eee;
+}
+.container{
+
+}
+.row{
+    display:flex;
+    width:100%;
+
+}
+#input__section{
+    width: 50%;
+    margin:10px auto;
+}
