@@ -5,7 +5,6 @@ function getGuess(){
     const  randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
     var result = document.getElementById("result");
     if (!isNaN(guess)){
-        count = count-1
         result.innerHTML = `Your Input is Invalid, Please Input a numer between 1 and 100, \n you have ${count} left`;
     }
     if (count == 0){
